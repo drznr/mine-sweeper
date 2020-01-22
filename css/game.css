@@ -1,0 +1,82 @@
+.game-container {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 2rem 0 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.board {
+
+}
+
+.timer {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: transparent;
+}
+.visible {
+    color: initial;
+}
+.game-levels {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 6rem;
+    font-weight: 700;
+}
+.game-levels span {
+    cursor: pointer;
+}
+.game-levels span:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+.smiley {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+.hints {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 1rem;
+    font-size: 3rem;
+}
+.hint {
+    cursor: pointer;
+}
+.hint:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #F9FF22, 0 0 30px #F9FF22, 0 0 40px #F9FF22, 0 0 55px #F9FF22, 0 0 75px #F9FF22;
+}
+.hint:not(:last-of-type) {
+    margin-right: 2rem;
+}
+.covered {
+   background-color: darkgray;
+   color: darkgray;
+}
+td {
+    border: 1px solid gray;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+.hinted {
+    background-color: #ccff00;
+}
+.header h1 {
+    display: inline;
+}
