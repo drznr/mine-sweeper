@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background-image: linear-gradient(-45deg, #a9eec2, #fad284, #f38181, #705772);
+    background-size: 800% 800%;
+    animation: movingBG 120s ease infinite;
+}
+body.dark {
+    background-image: linear-gradient(-45deg, #525252, #414141, #313131, #ca3e47);
+}
+
+
+@media only screen and (max-width: 900px) {
+    html {
+      font-size: 5px;
+    }
+}
+
+@keyframes movingBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
