@@ -14,9 +14,9 @@
     <header class="header">
         <div class="hints">
             <p>Hints left:</p>
-            <span class="hint" onclick="markHint()">&#x1f4a1;</span>
-            <span class="hint" onclick="markHint()">&#x1f4a1;</span>
-            <span class="hint" onclick="markHint()">&#x1f4a1;</span>
+            <span class="hint" onclick="toggleHint()">&#x1f4a1;</span>
+            <span class="hint" onclick="toggleHint()">&#x1f4a1;</span>
+            <span class="hint" onclick="toggleHint()">&#x1f4a1;</span>
         </div>
         <h1>My Mine Sweeper</h1>
         <div class="lifes">
@@ -26,6 +26,7 @@
             <span class="life">&#128150;</span>
         </div>
         <span class="theme"><img src="img/dark.png" title="change theme" onclick="changeTheme(this)"></span>
+        <button class="safe-btn" onclick="handleSafeClick(this)">safe click<span class="safe-notf">&#x2b;<span>3</span></span></button>
     </header>
     <div class="game-container">
         <div class="timer">0</div>
@@ -39,6 +40,7 @@
             <tbody class="board"></tbody>
         </table>
     </div>
+    <div class="undo"><span class="undo-btn" onclick="undoMoves()">&#x2B8C;undo</span></div>
     <p class="recs">best times: </p>
     <div class="records">
         <span class="rec">Easy:<br />
